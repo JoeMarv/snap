@@ -448,3 +448,140 @@ button {
     }
     /* MENU STYLES END */
 }
+
+
+/*For screens >= 1440px */
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 4.8em;
+    }
+    
+    .header {
+        margin: 2vw 2vw 2vw 3vw
+    }
+
+    .logo {
+        width: 6vw;
+    }
+
+    .hero-main-and-footer {
+        margin: 2vw 8vw;
+    }
+    
+    .hero-container {
+        width: 40vw;
+    }
+    
+    .main {
+        margin: 4vw 8vw 4vw 2vw;
+        width: 40vw;
+    }
+    
+    .main span {
+        font-size: 1.2em;
+    }
+    
+    .learn-btn {
+        margin: 3vw 0vw 0vw 0vw;
+        padding: 1.5vw 2vw;
+        font-size: 1.2em;
+        border-radius: 1.5vw;
+    }
+    
+    .footer {
+        margin: 0vw 8vw 0vw 2vw;
+        width: 40vw;
+    }
+    
+    .client {
+        width: 8vw;
+        object-fit:contain;
+    }
+    
+    /* MENU STYLES START*/
+    .menu-content {
+        width: 89vw;
+    }
+
+    .menu-major {
+        margin: 0vw 0vw 0vw 2vw;
+    }
+    
+    .menu-content button {
+        font-size: 0.9em;
+    }
+    
+    .menu-expanded {
+        margin: 0vw 1.5vw;
+    }
+    
+    .menu-expand {
+        margin: 2vw 0vw;
+    }
+    
+    .menu-expand img {
+        margin: 0vw 0vw 0vw 1vw;
+    }
+    
+    .down-icon {
+        display: flex;
+    }
+    
+    .up-icon {
+        display: none;
+    }
+    
+    .menu-expand-text {
+        border-radius: 0.5vw;
+        box-shadow: 0vw 0.5vw 2vw rgba(0, 0, 0, 0.2);
+        margin: 5vw 0vw 0vw 0vw;
+        font-size: 0.9em;
+        display: none;
+    }
+
+    .one {
+        margin-left: -5vw;
+    }
+    
+    .menu-expand-text-container {
+        margin: 1vw 2vw;
+    }
+    
+    .menu-expand-text-container img {
+        margin: 0vw 1.5vw 0vw 0vw;
+    }
+    
+    .menu-content-content {
+        margin: 2vw;
+        font-size: 0.9em;
+    }
+    
+    .register {
+        margin: 0vw 1vw;
+    }
+    
+    .register span {
+        margin: 0vw 1vw;
+        font-size: 0.9em;
+    }
+    
+    .register-btn {
+        padding: 0.75vw 1vw;
+        border-radius: 1vw;
+        margin: 0vw 1.5vw;
+    }
+        
+    /* Menu toggle styles*/
+    .down .down-icon {
+        display: none;
+    }
+    
+    .down .up-icon {
+        display: flex
+    }
+    
+    .down .menu-expand-text {
+        display: flex;
+    }
+    /* MENU STYLES END */
+}
