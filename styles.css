@@ -85,6 +85,7 @@ button {
     width: auto;
     cursor: pointer;
     transition: var(--transition);
+    border: 1px solid var(--clr-almost-black);
 }
 
 .learn-btn:hover {
@@ -113,8 +114,8 @@ button {
     width: 100vw;
     backdrop-filter: brightness(0.5);
     color: var(--clr-medium-gray);
-    transition: 1s linear;
     display: none;
+    top: 0;
 }
 
 .menu-content {
@@ -147,7 +148,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 2vw 6vw
+    margin: 2vw 6vw;
 }
 
 .menu-expand {
@@ -258,3 +259,192 @@ button {
     display: flex;
 }
 /* MENU STYLES END */
+
+
+/*For screens >= 768px */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2.6em;
+    }
+
+    .header-and-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .header {
+        margin: 2vw 2vw 2vw 3vw
+    }
+
+    .logo {
+        width: 8vw;
+        height: auto
+    }
+    
+    .menu-btn {
+        display: none;
+    }
+
+    .hero-main-and-footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 4vw 8vw;
+    }
+    
+    .hero-container {
+        width: 36vw;
+        height: auto;
+        background-image: url(images/image-hero-desktop.png);
+        background-size: contain;
+    }
+    
+    .main {
+        text-align: left;
+        margin: 4vw 8vw 4vw 0vw;
+        width: 40vw;
+        align-items: flex-start;
+    }
+    
+    .main span {
+        line-height: 1.6;
+        font-size: 0.7em;
+        color: var(--clr-medium-gray);
+    }
+    
+    .learn-btn {
+        margin: 3vw 0vw 0vw 0vw;
+        padding: 1.5vw 2vw;
+        font-size: 0.7em;
+        border-radius: 1.5vw;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0vw 8vw 0vw 0vw;
+        width: 40vw;
+    }
+    
+    .client {
+        width: 10vw;
+        object-fit:contain;
+    }
+    
+    /* MENU STYLES START*/
+    .menu {
+        position: relative;
+        height: auto;
+        width: auto;
+        backdrop-filter: brightness(1);
+        display: flex;
+    }
+    
+    .menu-content {
+        background-color: inherit;
+        height: auto;
+        width: 87vw;
+        margin: 0vw 0vw 0vw 0vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-major {
+        display: flex;
+        flex-direction: row;
+        margin: 0vw 0vw 0vw 4vw;
+    }
+    
+    .menu-content button {
+        font-size: 0.7em;
+    }
+    
+    .close-btn-container {
+        display: none;
+    }
+    
+    .menu-expanded {
+        margin: 0vw 2vw;
+    }
+    
+    .menu-expand {
+        padding: 0vw;
+        margin: 2vw 0vw;
+    }
+    
+    .menu-expand img {
+        margin: 0vw 0vw 0vw 1vw;
+    }
+    
+    .down-icon {
+        display: flex;
+    }
+    
+    .up-icon {
+        display: none;
+    }
+    
+    .menu-expand-text {
+        position: absolute;
+        background-color: var(--clr-almost-white);
+        width: auto;
+        border-radius: 1vw;
+        box-shadow: 0vw 1vw 4vw rgba(0, 0, 0, 0.2);
+        margin: 6vw 0vw 0vw 0vw;
+        font-size: 0.7em;
+        display: none;
+    }
+
+    .one {
+        margin-left: -10vw;
+    }
+    
+    .menu-expand-text-container {
+        margin: 1.5vw 3vw;
+    }
+    
+    .menu-expand-text-container img {
+        margin: 0vw 1.5vw 0vw 0vw;
+    }
+    
+    .menu-content-content {
+        margin: 2vw;
+        font-size: 0.7em;
+    }
+    
+    .register {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0vw 1vw;
+    }
+    
+    .register span {
+        margin: 0vw 2vw;
+        font-size: 0.7em;
+    }
+    
+    .register-btn {
+        padding: 1vw 1.5vw;
+        border-radius: 1.5vw;
+        margin: 0vw 2vw;
+    }
+        
+    /* Menu toggle styles*/
+    .down .down-icon {
+        display: none;
+    }
+    
+    .down .up-icon {
+        display: flex
+    }
+    
+    .down .menu-expand-text {
+        display: flex;
+    }
+    /* MENU STYLES END */
+}
